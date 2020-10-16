@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # TODO list with Electron
 **TL;DR**
 
