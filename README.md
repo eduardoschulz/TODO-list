@@ -38,10 +38,5 @@ If you have a suggestion send a email to:
 eduardo.schulz@protonmail.com
 
 Note: Plz dont spam me!
-=======
-# TODO List
 
-**Clone and run for a quick way to see Electron in action.**
-npm start
->>>>>>> fcd24d3ba96ce16625ba35eda97a78cad1ae18ea
 
