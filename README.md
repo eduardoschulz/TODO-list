@@ -1,5 +1,47 @@
+<<<<<<< HEAD
+# TODO list with Electron
+**TL;DR**
+
+Install nodejs, clone the repository and do the npm thing :
+```
+npm install
+
+npm start
+```
+**Clone and run for simple and ad free TODO list.**
+
+This is a minimal Electron based application TODO list. The objective of this project is to improve ours coding abilities, expecially with javascript. This is NOT a KISS (Keep it simple stupid) filosofy application, but we tried to do as simple as possible for a JS program.
+
+**Concept**
+Just the essential, no stupid features. No functional graphical actions and useless buttons.
+
+
+## To Use
+To "install" this program you'll need NodeJS. With that installed you will have acess to npm.
+
+**Installation**
+```bash
+# Clone this repository
+git clone https://github.com/eduardoschulz/todo-list
+# Go into the repository
+cd todo-list
+# Install dependencies
+npm install
+# Run the app
+npm start
+```
+PS: If your're running Linux on Windows with WSL [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
+
+**Contacts**
+
+If you have a suggestion send a email to:
+eduardo.schulz@protonmail.com
+
+Note: Plz dont spam me!
+=======
 # TODO List
 
 **Clone and run for a quick way to see Electron in action.**
 npm start
+>>>>>>> fcd24d3ba96ce16625ba35eda97a78cad1ae18ea
 
