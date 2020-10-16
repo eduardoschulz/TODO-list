@@ -1,6 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+      /*https://colorhunt.co/palette/167893*/
+    .title{
+      padding: 2.5px;
+      width: auto;
+      height: 60px;
+    background:#0f4c75;
+    text-align: center;
+
+      }
+      h1{
+        font-family: 'Courier New', Courier, monospace;
+        font-style: italic;
+        font-size: 30px;
+        color: #bbe1fa;
+
+
+
+      }
+      body{
+        background-color: #1b262c;
+      }
+      input{
+        margin:  auto;
+        border:none;
+        border-radius: 0;
+        width: 50%;
+        padding: 10px;
+        clear: both;
+        font-size: 15px;
+        background-color:#3282b8;
+        color: #bbe1fa;
+      }
+
+
+
+    </style>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
@@ -8,19 +45,16 @@
     <title>TODO LIST</title>
   </head>
   <body>
-    <h1>TODO LIST</h1>
-<<<<<<< HEAD
+    <div class="title"><h1>TODO List</h1></div>
     <br>
-    <input id="new_task"></input>
-    <button id="add_task" onclick"btpress()">Confirm</button>
-=======
-
->>>>>>> fcd24d3ba96ce16625ba35eda97a78cad1ae18ea
+    <center>//remover esses elementos
+    <input id="newTask" placeholder="name..."></input>
+    </center>
+    <center>
+    <button id="addTask" onclick"btpress()">Confirm</button>
+    </center>
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
   </body>
 </html>
-<<<<<<< HEAD
-`
-=======
->>>>>>> fcd24d3ba96ce16625ba35eda97a78cad1ae18ea
+
