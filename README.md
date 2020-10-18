@@ -37,5 +37,7 @@ If you have a suggestion send a email to:
 eduardo.schulz@protonmail.com
 
 Note: Plz dont spam me!
-
+## Future Features!
+- Saving Changes!(maybe with JSON file?)
+- Simple Installer
 
