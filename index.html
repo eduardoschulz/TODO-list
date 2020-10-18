@@ -1,60 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      /*https://colorhunt.co/palette/167893*/
-    .title{
-      padding: 2.5px;
-      width: auto;
-      height: 60px;
-    background:#0f4c75;
-    text-align: center;
-
-      }
-      h1{
-        font-family: 'Courier New', Courier, monospace;
-        font-style: italic;
-        font-size: 30px;
-        color: #bbe1fa;
-
-
-
-      }
-      body{
-        background-color: #1b262c;
-      }
-      input{
-        margin:  auto;
-        border:none;
-        border-radius: 0;
-        width: 50%;
-        padding: 10px;
-        clear: both;
-        font-size: 15px;
-        background-color:#3282b8;
-        color: #bbe1fa;
-      }
-
-
-
-    </style>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>TODO LIST</title>
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+    <title>TODO LIST</title> 
   </head>
   <body>
     <div class="title"><h1>TODO List</h1></div>
     <br>
-    <center>//remover esses elementos
-    <input id="newTask" placeholder="name..."></input>
+    <!--remover esses elementos -->
+    <center>
+    <input id="nameTask" placeholder="name..."></input>
     </center>
     <center>
-    <button id="addTask" onclick"btpress()">Confirm</button>
+    <button id="addTask" onclick="btPress()" >Confirm</button>
     </center>
+
+    <ul id="list">
+    </ul>
+
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
+    <script src="./list.js"></script>
   </body>
 </html>
 

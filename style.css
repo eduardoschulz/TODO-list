@@ -1,9 +1,38 @@
-div{
-    width: 100px;
-    height: 50px;
-}
 .title{
-    color:blue;
+    padding: 2.5px;
+    width: auto;
+    height: 60px;
+  background:#0f4c75;
+  text-align: center;
+
+    }
+    h1{
+      font-family: 'Courier New', Courier, monospace;
+      font-style: italic;
+      font-size: 30px;
+      color: #bbe1fa;
 
 
-}
+
+    }
+    body{
+      background-color: #1b262c;
+    }
+    input{
+      margin:  auto;
+      border:none;
+      border-radius: 0;
+      width: 50%;
+      padding: 10px;
+      clear: both;
+      font-size: 15px;
+      background-color:#3282b8;
+      color: #bbe1fa;
+      vertical-align: auto;
+   }
+
+   li{
+    font-size:20px;
+    color: #bbe1fa;
+
+   }
