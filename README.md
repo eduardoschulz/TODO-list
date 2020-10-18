@@ -7,6 +7,12 @@ npm install
 
 npm start
 ```
+or 
+```
+electron index.html
+```
+
+
 **Clone and run for simple and ad free TODO list.**
 
 This is a minimal Electron based application TODO list. The objective of this project is to improve ours coding abilities, expecially with javascript. This is NOT a KISS (Keep it simple stupid) filosofy application, but we tried to do as simple as possible for a JS program.
