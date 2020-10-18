@@ -3,6 +3,16 @@ tasks = [];
 //pode ser util para armazenar em um arquivo
 
 //quando o bt eh pressionado o valor eh guardado na array
+addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        btPress();
+    }
+}); 
+
+
+
+
 function btPress(){
     var inputTag = document.getElementById("nameTask").value; 
     if(inputTag == ""){
