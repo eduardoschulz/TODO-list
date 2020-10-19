@@ -7,7 +7,7 @@ npm install
 
 npm start
 ```
-or 
+or
 ```
 electron index.html
 ```
@@ -15,7 +15,7 @@ electron index.html
 
 **Clone and run for simple and ad free TODO list.**
 
-This is a minimal Electron based application TODO list. The objective of this project is to improve ours coding abilities, expecially with javascript. This is NOT a KISS (Keep it simple stupid) filosofy application, but we tried to do as simple as possible for a JS program.
+This is a minimal Electron based application TODO list. The objective of this project is to improve ours coding abilities, expecially with javascript. This is NOT a KISS (Keep it simple stupid) philosophy application, but we tried to do as simple as possible for a JS program.
 
 **Concept**
 Just the essential, no stupid features. No functional graphical actions and useless buttons.
@@ -46,4 +46,3 @@ Note: Plz dont spam me!
 ## Future Features!
 - Saving Changes!(maybe with JSON file?)
 - Simple Installer
-
