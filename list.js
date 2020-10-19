@@ -3,7 +3,6 @@ tasks = [];
 //pode ser util para armazenar em um arquivo
 var numTask = 1;
 //Define qual eh o id da task
-Linux eh Melhor que Windows
 
 //quando o bt eh pressionado o valor eh guardado na array
 addEventListener("keyup", function(event) {
