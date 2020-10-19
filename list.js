@@ -32,18 +32,28 @@ function btPress(){
         li.appendChild(document.createTextNode(inputTag));
         ul.appendChild(li);
         li.id  = numTask;
+        var btRem = document.createElement("button");
+        bt.id = "rem" + numTask;
+        btRem.setAttribute("onclick: removetask()");
+
+
     }
 }
+
 function removeTask(){
     //var remIdTask = document.getElementById.value('taskToRem');
      // aqui se define o id da task que deseja-se deletar
-    console.log(rem);
+    var btnid = event.srcElement.id;
+    console.log(btnid);
     //rem.id.remove(remIdTask);//faz o contrario da funcao appendChild
-    var remIdTask = document.getElementById("taskToRem").value;
+    /*var remIdTask = document.getElementById("taskToRem").value;
     remIdTask.remove();
+*/
+    var deathtrigger = document.getElementById.value(btnid);
+    deathtrigger.remove();
 
 
-
+//elem.parentNode.removeChild(elem);
 }
 
 //https://github.com/electron-userland/electron-json-storage
