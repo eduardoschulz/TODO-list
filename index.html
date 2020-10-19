@@ -6,7 +6,7 @@
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
-    <title>TODO LIST</title> 
+    <title>TODO LIST</title>
   </head>
   <body>
     <div class="title"><h1>TODO List</h1></div>
@@ -15,25 +15,18 @@
     <center>
     <input id="nameTask" placeholder="name..."></input>
   </center>
-    
+
     <br>
     <center>
     <button id="addTask" onclick="btPress()" >Confirm</button>
     </center>
-    
+
     <ul id="list">
     </ul>
-    <center>
-    <input class="inputRem"id="taskToRem" placeholder="task to remove - number"></input>
-    </center>
     <br>
-    <center>
-    <button id="remBt" onclick="removeTask()">Remove</button>
-    </center>
 
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
     <script src="./list.js"></script>
   </body>
 </html>
-

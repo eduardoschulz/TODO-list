@@ -1,7 +1,7 @@
 tasks = [];
 //Cria uma Array para armazenar as tasks
 //pode ser util para armazenar em um arquivo
-var numTask = 1;
+var numTask = 0;
 //Define qual eh o id da task
 
 //quando o bt eh pressionado o valor eh guardado na array
@@ -17,6 +17,7 @@ addEventListener("keyup", function(event) {
 
 function btPress(){
     var inputTag = document.getElementById("nameTask").value;
+    inputTag = inputTag + " ";
     if(inputTag == ""){
        alert("Please add a name!");
     }
@@ -32,24 +33,26 @@ function btPress(){
         li.appendChild(document.createTextNode(inputTag));
         ul.appendChild(li);
         li.id  = numTask;
-        var btRem = document.createElement("button");
-        btRem.id = "rem" + numTask;
-        btRem.setAttribute("onclick: removetask()");
+        var btsForRem = document.createElement("BUTTON");
+        btsForRem.innerHTML = "X";
+        li.appendChild(btsForRem);//Lukardos genio da formatacao JS!
 
+        btsForRem.id = numTask;
+        btsForRem.setAttribute("onclick", "removeTask()");
+        var idBt = (numTask);
+        console.log(idBt);
+//onclick="btPress()"
 
+        }
     }
-}
 
 function removeTask(){
-    //var remIdTask = document.getElementById.value('taskToRem');
-     // aqui se define o id da task que deseja-se deletar
+    console.log("aaa");
+
     var btnid = event.srcElement.id;
     console.log(btnid);
-    //rem.id.remove(remIdTask);//faz o contrario da funcao appendChild
-    /*var remIdTask = document.getElementById("taskToRem").value;
-    remIdTask.remove();
-*/
-    var deathtrigger = document.getElementById.value(btnid);
+
+    var deathtrigger = document.getElementById(btnid);
     deathtrigger.remove();
 
 
