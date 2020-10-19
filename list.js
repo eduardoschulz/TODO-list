@@ -33,7 +33,7 @@ function btPress(){
         ul.appendChild(li);
         li.id  = numTask;
         var btRem = document.createElement("button");
-        bt.id = "rem" + numTask;
+        btRem.id = "rem" + numTask;
         btRem.setAttribute("onclick: removetask()");
 
 
