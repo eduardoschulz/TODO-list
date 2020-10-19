@@ -11,13 +11,13 @@ addEventListener("keyup", function(event) {
         event.preventDefault();
         btPress();
     }
-}); 
+});
 
 
 
 
 function btPress(){
-    var inputTag = document.getElementById("nameTask").value; 
+    var inputTag = document.getElementById("nameTask").value;
     if(inputTag == ""){
        alert("Please add a name!");
     }
@@ -27,18 +27,18 @@ function btPress(){
         console.log(inputTag);
         tasks.push(inputTag);
         console.log(tasks)
-        
+
         var ul = document.getElementById("list");
         var li = document.createElement("li");
         li.appendChild(document.createTextNode(inputTag));
         ul.appendChild(li);
-        li.id  = numTask;   
+        li.id  = numTask;
     }
 }
 function removeTask(){
     //var remIdTask = document.getElementById.value('taskToRem');
      // aqui se define o id da task que deseja-se deletar
-    //console.log(rem);
+    console.log(rem);
     //rem.id.remove(remIdTask);//faz o contrario da funcao appendChild
     var remIdTask = document.getElementById("taskToRem").value;
     remIdTask.remove();
@@ -48,4 +48,3 @@ function removeTask(){
 
 //https://github.com/electron-userland/electron-json-storage
 //Pode ser interessante
-    
