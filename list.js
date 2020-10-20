@@ -41,13 +41,14 @@ function btPress(){
         btsForRem.setAttribute("onclick", "removeTask()");
         var idBt = (numTask);
         console.log(idBt);
+        nameTask.value = " ";
 //onclick="btPress()"
 
         }
     }
 
 function removeTask(){
-    console.log("aaa");
+    console.log("enter removeTask");
 
     var btnid = event.srcElement.id;
     console.log(btnid);
