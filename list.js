@@ -33,10 +33,18 @@ function btPress(){
         li.appendChild(document.createTextNode(inputTag));
         ul.appendChild(li);
         li.id  = numTask;
+        
+        
+        
         var btsForRem = document.createElement("BUTTON");
+        var btUp = document.createElement("BUTTON");
+        var btDown = document.createElement("BUTTON");
         btsForRem.innerHTML = "X";
+        btUp.innerHTML = "↑";
+        btDown.innerHTML = "↓";
         li.appendChild(btsForRem);//Lukardos genio da formatacao JS!
-
+        li.appendChild(btUp);
+        li.appendChild(btDown);
         btsForRem.id = numTask;
         btsForRem.setAttribute("onclick", "removeTask()");
         var idBt = (numTask);
@@ -58,6 +66,17 @@ function removeTask(){
 
 
 //elem.parentNode.removeChild(elem);
+}
+function upOrder(){
+
+
+}
+
+function downOrder(){
+
+
+
+
 }
 
 //https://github.com/electron-userland/electron-json-storage
