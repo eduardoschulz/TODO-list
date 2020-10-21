@@ -1,6 +1,8 @@
 # TODO list with Electron
 **TL;DR**
 
+![Application](app.png)
+
 Install nodejs, clone the repository and do the npm thing :
 ```
 npm install
