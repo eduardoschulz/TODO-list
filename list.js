@@ -31,9 +31,12 @@ function btPress(){
         console.log(tasks)
 
         var ul = document.getElementById("list");
+        var container = document.createElement("div");
         var li = document.createElement("li");
+        ul.appendChild(container);
         li.appendChild(document.createTextNode(inputTag));
-        ul.appendChild(li);
+        container.appendChild(li);
+        container.id = "#" + numTask;
         li.id  = numTask;
         li.setAttribute('draggable',true);//set the element to a draggable one
 
