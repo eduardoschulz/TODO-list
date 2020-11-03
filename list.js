@@ -11,7 +11,9 @@ addEventListener("keyup", function(event) {
         btPress();
     }
 });
+//https://www.youtube.com/watch?v=jfYWwQrtzzY
 
+var draggables = document.querySelectorAll(".draggable"); //searches for all element with draggable tag and store in this var
 
 
 
@@ -33,18 +35,18 @@ function btPress(){
         li.appendChild(document.createTextNode(inputTag));
         ul.appendChild(li);
         li.id  = numTask;
-
+        li.setAttribute('draggable',true);//set the element to a draggable one
 
 
         var btsForRem = document.createElement("BUTTON");
-        var btUp = document.createElement("BUTTON");
-        var btDown = document.createElement("BUTTON");
+        //var btUp = document.createElement("BUTTON");
+      //  var btDown = document.createElement("BUTTON");
         btsForRem.innerHTML = "X";
         //btUp.innerHTML = "↑";
         //btDown.innerHTML = "↓";
         li.appendChild(btsForRem);//Lukardos genio da formatacao JS!
-        li.appendChild(btUp);
-        li.appendChild(btDown);
+        //li.appendChild(btUp);
+        //li.appendChild(btDown);
         btsForRem.id = numTask;
         btsForRem.setAttribute("onclick", "removeTask()");
         var idBt = (numTask);
