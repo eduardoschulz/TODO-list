@@ -1,5 +1,5 @@
 
-  tasks = [];
+tasks = [];
 //Create an array to store tasks
 //maybe save it on a file
 var numTask = 0;
@@ -15,7 +15,8 @@ addEventListener("keyup", function(event) {
 
 function btPress(){
     var inputTag = document.getElementById("nameTask").value; //gets the task
-    inputTag = inputTag + " "; //solves a bug
+    inputTag = inputTag + " "; 
+    
     if(inputTag == ""){ //checks if task isnt empty
        alert("Please add a name!");
     }
@@ -43,20 +44,17 @@ function btPress(){
         //var btUp = document.createElement("BUTTON");
       //  var btDown = document.createElement("BUTTON");
         btsForRem.innerHTML = "X";
-        //btUp.innerHTML = "↑";
-        //btDown.innerHTML = "↓";
         li.appendChild(btsForRem);//Lukardos genio da formatacao JS!
-        //li.appendChild(btUp);
-        //li.appendChild(btDown);
         btsForRem.id = numTask;
         btsForRem.setAttribute("onclick", "removeTask()");
         console.log(numTask);
         nameTask.value = " ";
-        //onclick="btPress()"
-        confusiondragset();
+        //dragSets();
+        console.log("out");
+        dragCheck()
         }
     }
-
+//This function is assign to delete task with the X button
 function removeTask(){
     console.log("enter removeTask");
 
@@ -70,8 +68,42 @@ function removeTask(){
 //elem.parentNode.removeChild(elem);
 }
 
+
+
+
+function dragCheck(){
+  var draggables = document.querySelectorAll(".draggable");
+  var containers = document.querySelectorAll(".container");
+  console.log("enter drag check")
+  
+  var dragging = document.querySelector(".dragging");
+  
+  draggables.forEach(dragging =>{
+    dragging.addEventListener('dragstart', () => {
+      console.log('drag start')
+    })
+    dragging.addEventListener('dragend', () => {
+      console.log('drag end')
+    })
+
+
+  })
+
+  containers.forEach(container =>{
+    container.addEventListener
+
+  })
+
+
+
+}
+function potobaraShell(){
+
+
+
+}
 //https://www.youtube.com/watch?v=jfYWwQrtzzY
-document.addEventListener('DOMContentLoaded', (event) =>{
+/*document.addEventListener('DOMContentLoaded', (event) =>{
 
 function confusiondragset(){
   var draggables = document.querySelectorAll(".draggable"); //searches for all element with draggable tag and store in this var
@@ -96,7 +128,7 @@ function dragStart(){
   console.log('INSIDE drag start');
 }
 }
-
+*/ 
 //  draggables.addEventListener('dragstart', dragStart());
 
 

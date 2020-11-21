@@ -14,20 +14,28 @@
     <!--remover esses elementos -->
     <center>
     <input id="nameTask" placeholder="name..."></input>
-  </center>
+    </center>
 
     <br>
     <center>
     <button id="addTask" onclick="btPress()" >Confirm</button>
     </center>
-
+    <div id="activeTasks" class="container">
     <ul id="list">
     </ul>
-    <br>
+  <br>
+  </div>
+    <div id="divDone" class="container">
+      <li>this task is done</li>
+    </div>
+
+    
 
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
     <script src="./list.js" defer></script>
     <!--defer, only load the script after the html basis is ready-->
+
+
   </body>
 </html>

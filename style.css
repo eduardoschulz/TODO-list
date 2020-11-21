@@ -45,3 +45,11 @@
     
 
   }
+  #activeTasks{
+    float:left;
+  }
+  #divDone{
+    background-color:green;
+    float:right;
+  
+}
