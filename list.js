@@ -15,8 +15,8 @@ addEventListener("keyup", function(event) {
 
 function btPress(){
     var inputTag = document.getElementById("nameTask").value; //gets the task
-    inputTag = inputTag + " "; 
-    
+    inputTag = inputTag + " ";
+
     if(inputTag == ""){ //checks if task isnt empty
        alert("Please add a name!");
     }
@@ -54,7 +54,7 @@ function btPress(){
         dragCheck()
         }
     }
-//This function is assign to delete task with the X button
+//This function assigns the X button to delete the task
 function removeTask(){
     console.log("enter removeTask");
 
@@ -75,17 +75,29 @@ function dragCheck(){
   var draggables = document.querySelectorAll(".draggable");
   var containers = document.querySelectorAll(".container");
   console.log("enter drag check")
-  
+  var ulDone = document.getElementById('ulDone')
   var dragging = document.querySelector(".dragging");
-  
+  var jabiraca = 0;
+  var jervasio = 0;
   draggables.forEach(dragging =>{
     dragging.addEventListener('dragstart', () => {
+      jabiraca = 0;
+      jervasio = 0;
       console.log('drag start')
     })
     dragging.addEventListener('dragend', () => {
+
+      jabiraca = 1;
       console.log('drag end')
     })
-
+    dragging.addEventListener('dragover', () => {
+      jervasio = 1;
+      console.log(jervasio, jabiraca);
+      console.log("over");
+    })
+    if (jabiraca == 1 && jervasio == 1){
+      ulDone.appendChild(dragging)
+    }
 
   })
 
@@ -128,7 +140,7 @@ function dragStart(){
   console.log('INSIDE drag start');
 }
 }
-*/ 
+*/
 //  draggables.addEventListener('dragstart', dragStart());
 
 
