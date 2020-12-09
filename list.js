@@ -77,8 +77,9 @@ function dragCheck(){
   console.log("enter drag check")
   var ulDone = document.getElementById('ulDone')
   var dragging = document.querySelector(".dragging");
+  var target = document.getElementById('divDone')
   var jabiraca = 0;
-  var jervasio = 0;
+  var jervasio = 0; //variáveis Brasileiras salvando a pátria
   draggables.forEach(dragging =>{
     dragging.addEventListener('dragstart', () => {
       jabiraca = 0;
@@ -86,19 +87,17 @@ function dragCheck(){
       console.log('drag start')
     })
     dragging.addEventListener('dragend', () => {
-
       jabiraca = 1;
+      if (jabiraca == 1 && jervasio == 1){
+        ulDone.appendChild(dragging)
+      }
       console.log('drag end')
     })
-    dragging.addEventListener('dragover', () => {
+    target.addEventListener('dragover', () => {
       jervasio = 1;
       console.log(jervasio, jabiraca);
       console.log("over");
     })
-    if (jabiraca == 1 && jervasio == 1){
-      ulDone.appendChild(dragging)
-    }
-
   })
 
   containers.forEach(container =>{
