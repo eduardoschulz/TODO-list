@@ -37,7 +37,7 @@ npm install
 # Run the app
 npm start
 ```
-PS: If your're running Linux on Windows with WSL [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
+PS: If you're running Linux on Windows with WSL [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
 **Contacts**
 
